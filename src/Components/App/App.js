@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Counter from '../Counter/Counter';
+import Smartcounter from '../Smartcounter/Smartcounter';
 
 function App() {
   return (
     <>
       <h1>Hello World</h1>
-      <Counter />
+      <Smartcounter />
     </>
   );
 }
