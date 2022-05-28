@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../Ifoodcounter/Ifoodcounter.css'
 
 const Ifoodcounter = () => {
     const [ value, setValue ] = useState(0);
     const [ buttonStyle, setButtonStyle ] = useState("counter-button-minus-desactive")
+
+    useEffect(() => {
+        console.log('O valor foi alterado')
+    }, [buttonStyle]);
 
     const down = () => {
         if (value > 0) {
